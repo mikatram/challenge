@@ -3,14 +3,116 @@
 <head>
     <title>#6 CSS Drawing</title>
     <style>
-        /* here's your sketch pad, let's call it: picture as code */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,400;1,700&display=swap');
+
+        *{
+            position:absolute;
+            padding: 0;
+            margin: 0;
+		font-family: Arial;
+        }
+
+        .blackbar{
+                top: 98px;
+    left: 483px;
+    background-color: black;
+    width: 300px;
+    height: 115px;
+    color: white;
+
+        }
+
+        .type{
+                left: 28px;
+    top: 25px;
+    font-size: 60px;
+    font-family: Arial;
+    text-transform: uppercase;
+    text-align: right;
+        }
+
+        .blackbar::before{
+                position: absolute;
+    content: "";
+    display: block;
+    background-color: black;
+    height: 115px;
+    width: 150px;
+    transform: skewX(-42deg) translateX(-78px);
+        }
+
+.redbar{
+   background-color: rgb(223, 0, 0);
+    height: 115px;
+    width: 390px;
+    opacity: 1;
+    top: 64px;
+    left: 15px;}
+
+.redbar::after{
+	content:"";
+display: block;
+    background-color: rgb(223, 0, 0);
+    height: 115px;
+    width: 150px;
+    transform: skewX(-42deg) translateX(308px);}
+
+.type1, .type2{
+    color: white;
+    font-size: 64px;
+    font-style: italic;
+    left: 30px;
+    top: 13px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    z-index: 200;
+}
+
+.type2{
+left: 245px;
+}
+
+.technology{
+    top: 204px;
+    left: 46px;
+    font-weight: bold;
+    font-size: 35px;}
+
+.swirl{    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50px;
+    left: 214px;}
 
     </style>
 </head>
 
 <body>
+
     <div class="logo">
-        <!-- add as many "<div class="xyz"> </div>" as you like here, but nothing else" -->
+    <div class="blackbar">
+        <div class="saturn">
+            <div class="planet"></div>
+            <div class="type">Saturn</div>
+        </div>
     </div>
+    <div class="redbar">
+        <div class="mediamarkt">
+            <div class="type1">Media</div>
+            <div class="swirl"></div>
+            <div class="type2">Markt</div>
+        </div>
+    </div>
+    <div class="technology">Technology</div>
+    
+    
+    
+
+    
+    </div>
+    
 </body>
 </html>
